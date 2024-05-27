@@ -21,19 +21,19 @@
                 </tr>
             </thead>
             <tbody>
+            {% for x in lista%}
+               <tr>
             <td>ID</td>
             <td>Nombre</td>
             <td>Marca</td>
             <td>Precio</td>
             <td>ACCIONES</td>
-
-
-
+        </tr>
+        {% endfor%}
 </tbody>
-
         </table>
-
-
+        {% else %}
+        <h3>no hay datos para mostrar</h3>
     {% endif %}
 </body>
 </html>
